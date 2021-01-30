@@ -5,6 +5,8 @@ myVideo.muted = true
 
 var peer = new Peer()
 
+var myName = prompt("Type in your name");
+
 const myPeer = new Peer(undefined, {
 	path: '/peerjs',
 	host: '/',
@@ -24,7 +26,7 @@ navigator.mediaDevices
 
 		socket.on('user-connected', (userId) => {
 			connectToNewUser(userId, stream)
-			alert('Somebody connected', userId)
+			alert(myName + 'has joined the meeting', userId)
 		})
 
 		peer.on('call', (call) => {
@@ -48,17 +50,18 @@ navigator.mediaDevices
 			$('ul').append(`<li >
 								<span class="messageHeader">
 									<span>
-										From 
-										<span class="messageSender">Someone</span> 
-										to 
+							 
+										To 
 										<span class="messageReceiver">Everyone:</span>
 									</span>
+
 									${new Date().toLocaleString('en-US', {
 										hour: 'numeric',
 										minute: 'numeric',
 										hour12: true,
 									})}
 								</span>
+
 								<span class="message">${message}</span>
 							
 							</li>`)
