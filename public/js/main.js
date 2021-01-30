@@ -5,7 +5,6 @@ myVideo.muted = true
 
 var peer = new Peer()
 
-var myName = prompt("Type in your name");
 
 const myPeer = new Peer(undefined, {
 	path: '/peerjs',
