@@ -26,7 +26,7 @@ navigator.mediaDevices
 
 		socket.on('user-connected', (userId) => {
 			connectToNewUser(userId, stream)
-			alert(myName + 'has joined the meeting', userId)
+			alert('Someone has joined the meeting', userId)
 		})
 
 		peer.on('call', (call) => {
