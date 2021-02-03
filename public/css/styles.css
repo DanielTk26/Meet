@@ -28,7 +28,7 @@ video {
 
 .mainVideos {
 	flex-grow: 1;
-	background-color: #d1d8f0;
+	background-color: #222222;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -112,3 +112,64 @@ video {
 	font-size: 13px;
 }
 
+.mainChatWindow {
+	flex-grow: 1;
+	overflow-y: auto;
+}
+
+.messagesContainer {
+	list-style: none;
+}
+
+.message {
+	font-size: 13px;
+	display: block;
+}
+
+.messageSendingTo {
+	font-size: 12px;
+	margin-bottom: 8px;
+}
+
+.messageSendingTo span {
+	font-size: 12px;
+	margin-left: 3px;
+	background-color: #f2f2f7;
+	padding: 3px 8px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.messageSendingTo span:hover {
+	background-color: #e7f1fd;
+	color: #2f89f2;
+}
+
+.messageSendingTo svg {
+	font-size: 10px;
+	color: #000;
+}
+
+.messageHeader {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+	font-size: 11px;
+	color: #8086ac;
+}
+
+.messageReceiver {
+	color: #309af6;
+}
+
+.mainMessageContainer {
+	display: flex;
+}
+
+.mainMessageContainer input {
+	flex-grow: 1;
+	background-color: transparent;
+	border: none;
+	font-size: 13px;
+	outline: 0;
+}
